@@ -1,4 +1,4 @@
 ---
 dependencies:
-- App/install
-- App/config
+- libvirt/install
+- libvirt/sudoless

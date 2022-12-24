@@ -2,6 +2,6 @@
 - name: Install 
   ansible.builtin.dnf:
     name:
-      - virt-manager
+      - libvirt-client
     state: latest
   become: true
