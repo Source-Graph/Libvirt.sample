@@ -1,3 +1,19 @@
 ---
-- debug:
-    msg: "hello sudo"
+
+- name: passwordless sudo
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: '^%sudo'
+    line: '%sudo  ALL=(ALL:ALL) NOPASSWD: ALL'
+    validate: 'visudo -cf %s'
+  become: true
+
+- name: passwordless sudo (user)
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: '^{{ansible_user}}'
+    line: '{{ansible_user}}  ALL=(ALL:ALL) NOPASSWD: ALL'
+    validate: 'visudo -cf %s'
+  become: true
