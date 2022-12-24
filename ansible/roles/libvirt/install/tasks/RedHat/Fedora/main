@@ -5,3 +5,7 @@
       - libvirt-client
     state: latest
   become: true
+
+- name: Make Libvirt sudoless
+  include_role:
+    name: libvirt/sudoless
