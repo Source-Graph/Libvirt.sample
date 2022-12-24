@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1671849654 source:/home/me/Documents/learnLibvirt/main.cpp
+	<iostream>
+	<libvirt/libvirt.h>
+
