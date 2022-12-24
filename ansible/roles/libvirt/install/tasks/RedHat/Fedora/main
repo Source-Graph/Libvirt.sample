@@ -6,6 +6,7 @@
     state: latest
   become: true
 
-- name: Make Libvirt sudoless
+- name: Use Libvirt as non-root user
   include_role:
-    name: libvirt/sudoless
+    name: libvirt/non-root user
+

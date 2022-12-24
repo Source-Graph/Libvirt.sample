@@ -1,0 +1,7 @@
+---
+- name: Restart libvirtd
+  become: true
+  ansible.builtin.systemd:
+    state: restarted
+    daemon_reload: yes
+    name: libvirtd

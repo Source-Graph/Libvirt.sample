@@ -6,4 +6,7 @@
 
   roles:
   - libvirt/default
+  - virt-manager
   - CodeBlocks
+  - kvm
+#  - passwordless sudo
