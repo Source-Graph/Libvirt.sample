@@ -1,0 +1,7 @@
+---
+- name: Install 
+  ansible.builtin.dnf:
+    name:
+      - virt-manager
+    state: latest
+  become: true
