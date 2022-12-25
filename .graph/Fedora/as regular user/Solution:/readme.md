@@ -7,3 +7,6 @@ https://bugzilla.redhat.com/show_bug.cgi?id=1714031
 - https://bugzilla.redhat.com/show_bug.cgi?id=1714031#c1
 
 from.sch: https://www.google.com/search?q=fedora+virsh+non+root
+
+## -> Discussion
+https://serverfault.com/questions/803283/how-do-i-list-virsh-networks-without-sudo
